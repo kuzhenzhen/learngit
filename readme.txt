@@ -1,9 +1,4 @@
-git is a distributed version control system.
-git is free software distributed under the GPL.
+我是巨田田，从今天起，我开始翻译整理matplotlib库的东西，如果有小伙伴愿意加入，欢迎欢迎，我的微信号dadada_xiao.
+千里之行，始于足下，我们开始吧
+https://matplotlib.org/    是打算翻译的内容来源.本文档将给出实际的运行结果和实测数据.
 
-from today i begin to study git.
-i like it very much.
-i think the person who made it is a really genius.
-github.com
-
-hello, this is ju tiantian.
