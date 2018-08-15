@@ -2,19 +2,26 @@
 现在，进的样品是五氯苯，因为氯原子有同位素分子 CL:35,CL:37, 所以五氯苯会有五个氯原子的同位素峰
 
 2017-12-15T11-56-31.awd是数据文件
-图1是我们研究室中村先生写的软件，用于分析这个数据。
+图1是我们研究室中村先生写的软件，用于分析这个数据。我超级超级敬佩中村教授，发自肺腑的敬佩，高山仰止
 图2是Excel表格做出来的图，也可以用于分析这个数据，就是全选复制粘贴有些费劲，用于比较。
 图3是我用Python写的程序，使用了matplotlib作为画图利器。边学边写代码，我个人喜欢按目的去学。漫无边际的学的话，很容易迷失在知识的汪洋大海里面。
+
+
 写这个程序主要由4个部分：
 1.导入matplotlib，numpy的库
 2.读取文件的数据
 3.读取数据之后因为是字符串，调用pyplot里面的函数画图的时候就会报错，所以要写一个循环，是的每个字符串都转换成数值。
 4.使用matplotlib画图，使用matplotlib.pyplot画图。
 OK,是不是很简单，看伪代码是不是很简单，其实真代码也简单。见DA.py
+
+
 下面详细介绍DA.py的源码。
+
 1.导入matplotlib，numpy的库
+
 import numpy as np
 import matplotlib.pyplot as plt 
+
 2.读取文件的数据，我的数据格式是这样的：2017-12-15T11-56-31.awd
 -2
 -5
@@ -40,16 +47,22 @@ import matplotlib.pyplot as plt
 -604
 -475
 所以就比较容易。
+
 代码如下：
+
 filename = '2017-12-15T11-56-31.awd'
 fileName = open(filename, 'r')
 lines = fileName.read().splitlines()
+
 3.读取数据之后因为是字符串，调用pyplot里面的函数画图的时候就会报错，所以要写一个循环，是的每个字符串都转换成数值。
+
 newLines = []
 for  linesLetter in lines:
     b = int(linesLetter)
     newLines.append(b)
+    
 4.使用matplotlib画图，使用matplotlib.pyplot画图。
+
 l1=plt.plot(newLines,'r--',label='Pentachlorobenzene')
 plt.title('267 nm 100 fs laser ionization for Pentachlorobenzene using TOFMS')
 plt.xlabel('channel')
