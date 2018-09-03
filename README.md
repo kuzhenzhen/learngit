@@ -3,16 +3,22 @@
 https://matplotlib.org/    是打算翻译的内容来源.
 
 在我们实验室，我们使用267nm波长100fs的脉冲激光作为电离源，电离产生的分子离子，碎片离子被飞行时间质谱仪进行离子质量分析，从而确定这个化合物是什么。
+![image](https://github.com/kuzhenzhen/matplotlib-/blob/master/Picture1.png)
+这种信号处理方式是模拟信号
+
+如今在我们研究室正在做的课题是模拟转数字信号，经过时间的累积信号，得到更好的信噪比，从而达到超低浓度的检测
+![image](https://github.com/kuzhenzhen/matplotlib-/blob/master/Picture2.png)
 
 现在，进的样品是五氯苯，因为氯原子有同位素分子 CL:35,CL:37, 所以五氯苯会有五个氯原子的同位素峰
-
+![image](https://github.com/kuzhenzhen/matplotlib-/blob/master/%E5%9B%BE3-2%E9%99%84%E5%B8%A6%E6%B3%A8%E9%87%8A.jpg)
 2017-12-15T11-56-31.awd是数据文件
 图1是我们研究室中村先生写的软件，用于分析这个数据。我超级超级敬佩中村教授，发自肺腑的敬佩，高山仰止
 ![image](https://github.com/kuzhenzhen/matplotlib-/blob/master/%E5%9B%BE1.png)
 图2是Excel表格做出来的图，也可以用于分析这个数据，就是全选复制粘贴有些费劲，用于比较。
+![image](https://github.com/kuzhenzhen/matplotlib-/blob/master/%E5%9B%BE2.png)
 图3是我用Python写的程序，使用了matplotlib作为画图利器。边学边写代码，我个人喜欢按目的去学。漫无边际的学的话，很容易迷失在知识的汪洋大海里面。
-
-
+![image](https://github.com/kuzhenzhen/matplotlib-/blob/master/%E5%9B%BE3-1.png)
+![image](https://github.com/kuzhenzhen/matplotlib-/blob/master/%E5%9B%BE3-2.png)
 写这个程序主要由4个部分：
 1.导入matplotlib，numpy的库
 2.读取文件的数据
